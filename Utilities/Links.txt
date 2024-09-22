@@ -1,0 +1,2 @@
+- NASA exoplanet catalogue: https://exoplanetarchive.ipac.caltech.edu/
+- GAIA stars catalogue: https://www.cosmos.esa.int/web/gaia/data-release-3
