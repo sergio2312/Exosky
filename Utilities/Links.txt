@@ -1,2 +1,4 @@
 - NASA exoplanet catalogue: https://exoplanetarchive.ipac.caltech.edu/
 - GAIA stars catalogue: https://www.cosmos.esa.int/web/gaia/data-release-3
+- Godot: https://godotengine.org/download/windows/
+- Godot Pyhton Integration: https://www.youtube.com/watch?v=IafLArxKVjY
