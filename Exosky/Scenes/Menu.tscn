@@ -22,6 +22,7 @@ layout_mode = 2
 text = "Play"
 
 [node name="Play" type="Button" parent="MarginContainer/VBoxContainer/Play"]
+layout_mode = 0
 text = "Play"
 
 [node name="Quit" type="Button" parent="MarginContainer/VBoxContainer"]
