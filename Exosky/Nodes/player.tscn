@@ -1,0 +1,9 @@
+[gd_scene load_steps=2 format=3 uid="uid://bdudl3vickyag"]
+
+[ext_resource type="Script" path="res://Scripts/PlayerController.gd" id="1_nx4r6"]
+
+[node name="Player" type="Node3D"]
+script = ExtResource("1_nx4r6")
+
+[node name="Camera" type="Camera3D" parent="."]
+size = 0.786

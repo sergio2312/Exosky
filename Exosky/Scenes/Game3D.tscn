@@ -1,3 +1,13 @@
-[gd_scene format=3 uid="uid://eadhxj3on3qx"]
+[gd_scene load_steps=3 format=3 uid="uid://eadhxj3on3qx"]
+
+[ext_resource type="Script" path="res://Scripts/StarManager.gd" id="1_16vrx"]
+[ext_resource type="PackedScene" uid="uid://bdudl3vickyag" path="res://Nodes/player.tscn" id="2_sbabl"]
 
 [node name="Game" type="Node3D"]
+
+[node name="StarManager" type="Node" parent="."]
+script = ExtResource("1_16vrx")
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
+
+[node name="Player" parent="." instance=ExtResource("2_sbabl")]
