@@ -4,5 +4,11 @@
 
 [node name="Game" type="Node3D"]
 
-[node name="StarManager" type="Node3D" parent="."]
+[node name="StarManager" type="Node" parent="."]
 script = ExtResource("1_16vrx")
+
+[node name="Camera3D" type="Camera3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 324.572)
+size = 0.786
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
