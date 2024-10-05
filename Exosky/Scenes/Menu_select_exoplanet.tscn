@@ -1,9 +1,9 @@
 [gd_scene load_steps=3 format=3 uid="uid://ppb0m7n77oh0"]
 
 [ext_resource type="Script" path="res://Scripts/selection_menu.gd" id="1_f1627"]
-[ext_resource type="PackedScene" uid="uid://c5vbjeay0n5ey" path="res://Scenes/option_button.tscn" id="2_bll4y"]
+[ext_resource type="PackedScene" uid="uid://0okpb5mcyfec" path="res://Nodes/option_button.tscn" id="2_bll4y"]
 
-[node name="MainMenu" type="Control"]
+[node name="SelectionMenu" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 42.0
@@ -21,3 +21,9 @@ layout_mode = 2
 [node name="OptionButton" parent="MarginContainer/VBoxContainer" instance=ExtResource("2_bll4y")]
 unique_name_in_owner = true
 layout_mode = 2
+
+[node name="Button" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+text = "Confirmar"
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Button" to="." method="_on_button_pressed"]
