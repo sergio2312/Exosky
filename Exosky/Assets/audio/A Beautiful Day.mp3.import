@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://80r2i724mefu"
+path="res://.godot/imported/A Beautiful Day.mp3-b3e33829554a95bd21b10e8ee47572ba.mp3str"
+
+[deps]
+
+source_file="res://Assets/audio/A Beautiful Day.mp3"
+dest_files=["res://.godot/imported/A Beautiful Day.mp3-b3e33829554a95bd21b10e8ee47572ba.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -29,3 +29,6 @@ func show_stars():
         $".".add_child(x)
        
         
+
+func _on_button_pressed() -> void:
+    get_tree().quit()
