@@ -1,12 +1,17 @@
-[gd_scene load_steps=3 format=3 uid="uid://eadhxj3on3qx"]
+[gd_scene load_steps=4 format=3 uid="uid://eadhxj3on3qx"]
 
 [ext_resource type="Script" path="res://Scripts/StarManager.gd" id="1_16vrx"]
 [ext_resource type="PackedScene" uid="uid://bdudl3vickyag" path="res://Nodes/player.tscn" id="2_sbabl"]
+[ext_resource type="Script" path="res://Scripts/ConstellationManager.gd" id="2_vbi5q"]
 
 [node name="Game" type="Node3D"]
 
 [node name="StarManager" type="Node" parent="."]
 script = ExtResource("1_16vrx")
+scaleFactor = 0.1
+
+[node name="ConstellationManager" type="Node" parent="."]
+script = ExtResource("2_vbi5q")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 
