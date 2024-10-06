@@ -1,8 +1,19 @@
-[gd_scene load_steps=4 format=3 uid="uid://eadhxj3on3qx"]
+[gd_scene load_steps=7 format=3 uid="uid://eadhxj3on3qx"]
 
 [ext_resource type="Script" path="res://Scripts/StarManager.gd" id="1_16vrx"]
 [ext_resource type="PackedScene" uid="uid://dhimjc63cdqo1" path="res://Scenes/constellation_manager.tscn" id="2_pnk3m"]
 [ext_resource type="PackedScene" uid="uid://bdudl3vickyag" path="res://Nodes/player.tscn" id="2_sbabl"]
+
+[sub_resource type="Environment" id="Environment_jcm8k"]
+background_mode = 3
+background_energy_multiplier = 11.42
+glow_enabled = true
+glow_bloom = 1.0
+glow_hdr_threshold = 0.0
+
+[sub_resource type="CameraAttributesPractical" id="CameraAttributesPractical_ny0vw"]
+
+[sub_resource type="Compositor" id="Compositor_2j1ft"]
 
 [node name="Game" type="Node3D"]
 
@@ -16,3 +27,8 @@ scaleFactorAdd = 0.035
 [node name="Player" parent="." instance=ExtResource("2_sbabl")]
 
 [node name="ConstellationManager" parent="Player" instance=ExtResource("2_pnk3m")]
+
+[node name="WorldEnvironment" type="WorldEnvironment" parent="."]
+environment = SubResource("Environment_jcm8k")
+camera_attributes = SubResource("CameraAttributesPractical_ny0vw")
+compositor = SubResource("Compositor_2j1ft")

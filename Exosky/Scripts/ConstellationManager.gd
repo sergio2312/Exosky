@@ -1,5 +1,6 @@
 extends Node
 
+var pairComplete:bool = false
 var lastPos:Vector3
 var currentPoints:Array[Vector3]=[]
 var constellation:Array[Node]=[]
@@ -16,11 +17,13 @@ func _process(_delta: float) -> void:
 
 func add_Point(vPos:Vector3):
     if(lastPos==vPos): return
-    constellation.append(createLine(lastPos,vPos,Color.WHITE,50))
-    #cleanup()
-    #currentPoints.append(vPos);
     lastPos=vPos
-    #draw_current_constellation()
+    currentPoints.append(vPos)
+    
+    if(currentPoints.size()==2):
+        constellation.append(createLine(currentPoints[0],currentPoints[1],Color.WHITE,50))
+        currentPoints.clear()
+    
     
 func clear_points():
     cleanup()
