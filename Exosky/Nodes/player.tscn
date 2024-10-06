@@ -5,8 +5,10 @@
 [node name="Player" type="Node3D"]
 script = ExtResource("1_nx4r6")
 mouse_sensitivity = 0.05
+SensitivityRange = Vector2(0.05, 0.01)
 fovChangeSpeed = 50
-moveSpeed = 200
+moveSpeed = 5
+planetradius = 10
 
 [node name="Camera" type="Camera3D" parent="."]
 unique_name_in_owner = true

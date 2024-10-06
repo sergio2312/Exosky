@@ -8,6 +8,7 @@ var constellation:Array[Node]=[]
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
+    lastPos=Vector3.ZERO
     currentPoints.clear()
     pass # Replace with function body.
 
@@ -23,7 +24,8 @@ func add_Point(vPos:Vector3):
     if(currentPoints.size()==2):
         constellation.append(createLine(currentPoints[0],currentPoints[1],Color.WHITE,50))
         currentPoints.clear()
-    
+        lastPos=Vector3.ZERO
+        $"..".lastCollider=null
     
 func clear_points():
     cleanup()
@@ -39,9 +41,9 @@ func cleanup():
         x.queue_free()
     constellation.clear()
         
-func createLine(a, b, color, thickness) -> Node:
+func createLine(a, b, _color, thickness) -> Node:
     var line = meshLine.instantiate()
-    add_child(line)
+    %StarManager.add_child(line)
     line.scale = Vector3(0.01*thickness, 0.01*thickness, a.distance_to(b)/2)
     line.look_at_from_position((a+b)/2, b, Vector3.UP)
     return line

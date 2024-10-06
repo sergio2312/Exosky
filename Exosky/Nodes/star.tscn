@@ -9,7 +9,7 @@ emission_energy_multiplier = 16.0
 material = SubResource("StandardMaterial3D_rr7ua")
 
 [sub_resource type="SphereShape3D" id="SphereShape3D_yqh6k"]
-radius = 1.0
+radius = 1.5
 
 [node name="Star" type="MeshInstance3D"]
 mesh = SubResource("SphereMesh_5qhqa")

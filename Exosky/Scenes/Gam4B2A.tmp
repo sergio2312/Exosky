@@ -1,52 +1,11 @@
-[gd_scene load_steps=18 format=3 uid="uid://eadhxj3on3qx"]
+[gd_scene load_steps=10 format=3 uid="uid://eadhxj3on3qx"]
 
 [ext_resource type="Script" path="res://Scenes/exit_control.gd" id="1_5w0mi"]
 [ext_resource type="Script" path="res://Scripts/StarManager.gd" id="1_16vrx"]
 [ext_resource type="PackedScene" uid="uid://dhimjc63cdqo1" path="res://Scenes/constellation_manager.tscn" id="2_pnk3m"]
 [ext_resource type="PackedScene" uid="uid://bdudl3vickyag" path="res://Nodes/player.tscn" id="2_sbabl"]
-[ext_resource type="PackedScene" uid="uid://bdb6jsrksrr7g" path="res://Resources/level.fbx" id="5_u3qq8"]
 
-[sub_resource type="Curve" id="Curve_n52wr"]
-min_value = -1.0
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, -1), 0.0, 0.0, 0, 0]
-point_count = 2
-
-[sub_resource type="CurveTexture" id="CurveTexture_3su1c"]
-curve = SubResource("Curve_n52wr")
-
-[sub_resource type="Curve" id="Curve_3pwhh"]
-_data = [Vector2(0, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
-point_count = 2
-
-[sub_resource type="CurveTexture" id="CurveTexture_yfhsx"]
-curve = SubResource("Curve_3pwhh")
-
-[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_2sinq"]
-lifetime_randomness = 0.48
-emission_shape = 1
-emission_sphere_radius = 0.16
-angle_min = -6.19999
-angle_max = -6.19999
-gravity = Vector3(0, 1, 0)
-scale_curve = SubResource("CurveTexture_yfhsx")
-hue_variation_min = -0.34
-hue_variation_max = 0.28
-hue_variation_curve = SubResource("CurveTexture_3su1c")
-turbulence_noise_strength = 10.23
-turbulence_noise_scale = 10.0
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_tagxa"]
-albedo_color = Color(0, 0, 0, 1)
-emission_enabled = true
-emission = Color(1, 0.0117647, 0, 1)
-emission_energy_multiplier = 14.45
-
-[sub_resource type="SphereMesh" id="SphereMesh_ekh1y"]
-material = SubResource("StandardMaterial3D_tagxa")
-radius = 0.054
-height = 0.126
-
-[sub_resource type="Image" id="Image_0x6ym"]
+[sub_resource type="Image" id="Image_c66a8"]
 data = {
 "data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 38, 255, 255, 255, 139, 255, 255, 255, 207, 255, 255, 255, 241, 255, 255, 255, 241, 255, 255, 255, 211, 255, 255, 255, 145, 255, 255, 255, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 4, 255, 255, 255, 137, 255, 255, 255, 251, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 253, 255, 255, 255, 149, 255, 255, 255, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 4, 255, 255, 255, 175, 255, 255, 255, 255, 255, 255, 255, 247, 255, 255, 255, 139, 255, 255, 255, 48, 255, 255, 255, 4, 255, 255, 255, 6, 255, 255, 255, 40, 255, 255, 255, 131, 255, 255, 255, 243, 255, 255, 255, 255, 255, 255, 255, 187, 255, 255, 255, 8, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 135, 255, 255, 255, 255, 255, 255, 255, 227, 255, 255, 255, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 36, 255, 255, 255, 219, 255, 255, 255, 255, 255, 255, 255, 153, 0, 0, 0, 0, 255, 255, 255, 36, 255, 255, 255, 251, 255, 255, 255, 247, 255, 255, 255, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 34, 255, 255, 255, 241, 255, 255, 255, 253, 255, 255, 255, 46, 255, 255, 255, 135, 255, 255, 255, 255, 255, 255, 255, 141, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 126, 255, 255, 255, 255, 255, 255, 255, 151, 255, 255, 255, 199, 255, 255, 255, 255, 255, 255, 255, 52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 34, 255, 255, 255, 255, 255, 255, 255, 217, 255, 255, 255, 233, 255, 255, 255, 255, 255, 255, 255, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 0, 255, 255, 255, 251, 255, 255, 255, 245, 255, 255, 255, 233, 255, 255, 255, 255, 255, 255, 255, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 0, 255, 255, 255, 251, 255, 255, 255, 245, 255, 255, 255, 201, 255, 255, 255, 255, 255, 255, 255, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 34, 255, 255, 255, 255, 255, 255, 255, 217, 255, 255, 255, 135, 255, 255, 255, 255, 255, 255, 255, 143, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 124, 255, 255, 255, 255, 255, 255, 255, 151, 255, 255, 255, 34, 255, 255, 255, 251, 255, 255, 255, 247, 255, 255, 255, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 34, 255, 255, 255, 241, 255, 255, 255, 253, 255, 255, 255, 48, 0, 0, 0, 0, 255, 255, 255, 137, 255, 255, 255, 255, 255, 255, 255, 227, 255, 255, 255, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 34, 255, 255, 255, 219, 255, 255, 255, 255, 255, 255, 255, 153, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 4, 255, 255, 255, 175, 255, 255, 255, 255, 255, 255, 255, 247, 255, 255, 255, 137, 255, 255, 255, 44, 255, 255, 255, 4, 255, 255, 255, 4, 255, 255, 255, 40, 255, 255, 255, 129, 255, 255, 255, 243, 255, 255, 255, 255, 255, 255, 255, 189, 255, 255, 255, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 4, 255, 255, 255, 139, 255, 255, 255, 251, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 253, 255, 255, 255, 253, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 253, 255, 255, 255, 151, 255, 255, 255, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 38, 255, 255, 255, 141, 255, 255, 255, 207, 255, 255, 255, 241, 255, 255, 255, 243, 255, 255, 255, 211, 255, 255, 255, 145, 255, 255, 255, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
 "format": "RGBA8",
@@ -56,7 +15,7 @@ data = {
 }
 
 [sub_resource type="ImageTexture" id="ImageTexture_nh3u2"]
-image = SubResource("Image_0x6ym")
+image = SubResource("Image_c66a8")
 
 [sub_resource type="Environment" id="Environment_jcm8k"]
 background_mode = 3
@@ -77,7 +36,8 @@ unique_name_in_owner = true
 script = ExtResource("1_16vrx")
 scaleFactorMult = 0.05
 scaleFactorAdd = 0.2
-moveSpeed = 0.965
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 
 [node name="TopView" type="Camera3D" parent="."]
 unique_name_in_owner = true
@@ -91,25 +51,8 @@ transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 4.9
 projection = 1
 size = 250.0
 
-[node name="Level" parent="." instance=ExtResource("5_u3qq8")]
-transform = Transform3D(0.131601, -0.702053, -3.34607, -0.616489, 3.28878, -0.714281, 3.36288, 0.630379, -1.46261e-07, 0, -4.62971, 0)
-
-[node name="OmniLight3D" type="OmniLight3D" parent="Level"]
-transform = Transform3D(0.292273, 1.11759e-08, 2.76113e-09, -3.72529e-09, 0.292273, 2.14793e-09, -4.7822e-09, -2.46764e-09, 0.292273, 0.00266485, 1.06336, 0.000320882)
-light_color = Color(0.807279, 0.5737, 0, 1)
-light_energy = 1.736
-light_size = 0.415
-omni_range = 5.03522
-
-[node name="GPUParticles3D" type="GPUParticles3D" parent="Level/OmniLight3D"]
-transform = Transform3D(1, 5.96046e-08, 9.31363e-09, -5.96046e-08, 1, 5.85573e-08, -1.06657e-08, -6.50955e-08, 1, -0.0147437, -0.128873, 0.0178036)
-amount = 50
-lifetime = 0.93
-process_material = SubResource("ParticleProcessMaterial_2sinq")
-draw_pass_1 = SubResource("SphereMesh_ekh1y")
-
 [node name="Player" parent="." instance=ExtResource("2_sbabl")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0, 0)
+FOVRange = Vector2(10, 75)
 planetradius = 0
 
 [node name="ConstellationManager" parent="Player" instance=ExtResource("2_pnk3m")]

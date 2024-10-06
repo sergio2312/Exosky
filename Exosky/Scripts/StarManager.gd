@@ -1,4 +1,4 @@
-extends Node
+extends Node3D
 
 # Called when the node enters the scene tree for the first time.
 var starBlueprint = preload("res://Nodes/star.tscn")
@@ -9,14 +9,16 @@ var starListNodes: Array[Node]
 
 @export var clamping:Vector2 = Vector2(0,100)
 @export var distance:float = 100
+@export var moveSpeed:float = 20
+
 
 func _ready():
     starListNodes.clear()
     import_resources_data()
     show_stars()
     
-#func _process(delta: float) -> void:
-    #show_stars()
+func _process(delta: float) -> void:
+    rotateStars(delta)
     
 func import_resources_data():   
     var file = FileAccess.open(SelectionMenu.rutaSeleccionada, FileAccess.READ)
@@ -54,3 +56,10 @@ func show_north():
 func show_all():
     for star in starListNodes:
         star.visible=true
+
+func rotateStars(delta:float):
+    if Input.is_action_pressed("forward"):
+        global_rotate(Vector3(0, 0, 1), moveSpeed * delta)  # Rotate counterclockwise around global Z-axis
+    if Input.is_action_pressed("backward"):
+        global_rotate(Vector3(0, 0, 1 ), -moveSpeed * delta)  # Rotate counterclockwise around global Z-axis
+    
