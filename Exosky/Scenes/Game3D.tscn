@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=3 uid="uid://eadhxj3on3qx"]
+[gd_scene load_steps=5 format=3 uid="uid://eadhxj3on3qx"]
 
 [ext_resource type="Script" path="res://Scripts/StarManager.gd" id="1_16vrx"]
 [ext_resource type="PackedScene" uid="uid://dhimjc63cdqo1" path="res://Scenes/constellation_manager.tscn" id="2_pnk3m"]

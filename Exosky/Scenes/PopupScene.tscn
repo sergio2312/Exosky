@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://dytvq2vhyiddi"]
+
+[node name="PopupScene" type="Node"]
+
+[node name="Popup" type="Popup" parent="."]
+title = "Example"
+
+[node name="Label" type="Label" parent="Popup"]
+offset_right = 40.0
+offset_bottom = 23.0
+text = "## Ejemplo de texto."
