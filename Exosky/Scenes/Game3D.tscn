@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://eadhxj3on3qx"]
+[gd_scene load_steps=5 format=3 uid="uid://eadhxj3on3qx"]
 
 [ext_resource type="Script" path="res://Scripts/StarManager.gd" id="1_16vrx"]
 [ext_resource type="Script" path="res://Scenes/exit_control.gd" id="1_yudjg"]

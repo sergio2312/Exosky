@@ -12,7 +12,7 @@ func _ready():
     
     
 func import_resources_data():   
-    var file = FileAccess.open("res://Data/RandomStars.txt", FileAccess.READ)
+    var file = FileAccess.open(SelectionMenu.rutaSeleccionada, FileAccess.READ)
     while !file.eof_reached():
         var data_set = file.get_csv_line(";")
         if (data_set.size()>1):
