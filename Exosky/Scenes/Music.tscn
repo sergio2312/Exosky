@@ -1,0 +1,10 @@
+[gd_scene load_steps=2 format=3 uid="uid://kteaojmqony2"]
+
+[ext_resource type="AudioStream" uid="uid://80r2i724mefu" path="res://Assets/audio/A Beautiful Day.mp3" id="1_unrim"]
+
+[node name="Music" type="Node"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("1_unrim")
+volume_db = -10.306
+autoplay = true
