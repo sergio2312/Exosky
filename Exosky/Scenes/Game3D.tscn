@@ -32,7 +32,8 @@ glow_hdr_threshold = 0.0
 [node name="StarManager" type="Node" parent="."]
 unique_name_in_owner = true
 script = ExtResource("1_16vrx")
-scaleFactorMult = 0.33
+scaleFactorMult = 0.05
+scaleFactorAdd = 0.2
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 
@@ -42,7 +43,7 @@ scaleFactorMult = 0.33
 
 [node name="TopView" type="Camera3D" parent="Player"]
 unique_name_in_owner = true
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -1.7606, 0)
+transform = Transform3D(-1, -8.74228e-08, 3.82137e-15, 0, -4.37114e-08, -1, 8.74228e-08, -1, 4.37114e-08, 0, -1.7606, 0)
 projection = 1
 size = 250.0
 

@@ -44,10 +44,10 @@ func _process(delta):
         cursor.modulate=Color.RED
     
     var dir = -%Camera.global_basis.z
-    if Input.is_action_pressed("forward"):
-        global_position+=dir * moveSpeed * delta
-    if Input.is_action_pressed("backward"):
-        global_position-=dir * moveSpeed * delta
+    #if Input.is_action_pressed("forward"):
+        #global_position+=dir * moveSpeed * delta
+    #if Input.is_action_pressed("backward"):
+        #global_position-=dir * moveSpeed * delta
     if Input.is_action_pressed("increase_FOV"):
         currentFov += fovChangeSpeed * delta
     if Input.is_action_pressed("decrease_FOV"):
