@@ -10,4 +10,4 @@ func add_elements():
         optionButton.add_item("Exoplaneta_"+str(i))
 
 func _on_button_pressed() -> void:
-    get_tree().change_scene_to_file("res://Scenes/Game3D.tscn")
+    get_tree().change_scene_to_file("res://Scenes/Game.tscn")

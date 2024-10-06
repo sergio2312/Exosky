@@ -3,16 +3,21 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 var starBlueprint = preload("res://Nodes/star.tscn")
 var starList: Array[StarObject]
-@export var scaleFactor:float = 1
+@export var scaleFactorMult:float = 1
+@export var scaleFactorAdd:float = 0
+
+@export var clamping:Vector2 = Vector2(0,100)
+@export var distance:float = 100
 
 func _ready():
     import_resources_data()
     show_stars()
-    print($".".get_child_count())
     
+#func _process(delta: float) -> void:
+    #show_stars()
     
 func import_resources_data():   
-    var file = FileAccess.open("res://Data/RandomStars.txt", FileAccess.READ)
+    var file = FileAccess.open("res://Data/prueba.txt", FileAccess.READ)
     while !file.eof_reached():
         var data_set = file.get_csv_line(";")
         if (data_set.size()>1):
@@ -27,9 +32,9 @@ func import_resources_data():
 func show_stars():   
     for currentStar in starList:
         var x:Node3D = starBlueprint.instantiate()
-        x.position=currentStar.pos*100
-        var fScale = currentStar.radius * scaleFactor
-        var vScale = Vector3.ONE * fScale
+        x.position=currentStar.pos*distance
+        var fScale = currentStar.radius * scaleFactorMult + scaleFactorAdd
+        var vScale = Vector3.ONE*fScale
         x.scale = vScale
         $".".add_child(x)
        

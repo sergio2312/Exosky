@@ -1,0 +1,14 @@
+[gd_scene load_steps=4 format=3 uid="uid://dlv2aeba717jv"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_8p0p8"]
+emission_enabled = true
+emission = Color(1, 1, 1, 1)
+
+[sub_resource type="CylinderMesh" id="CylinderMesh_frg7g"]
+material = SubResource("StandardMaterial3D_8p0p8")
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hd3m7"]
+
+[node name="Line" type="MeshInstance3D"]
+mesh = SubResource("CylinderMesh_frg7g")
+surface_material_override/0 = SubResource("StandardMaterial3D_hd3m7")
