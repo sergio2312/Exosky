@@ -3,6 +3,7 @@ extends Node
 # Called when the node enters the scene tree for the first time.
 var starBlueprint = preload("res://Nodes/star.tscn")
 var starList: Array[StarObject]
+var starListNodes: Array[Node]
 @export var scaleFactorMult:float = 1
 @export var scaleFactorAdd:float = 0
 
@@ -10,6 +11,7 @@ var starList: Array[StarObject]
 @export var distance:float = 100
 
 func _ready():
+    starListNodes.clear()
     import_resources_data()
     show_stars()
     
@@ -36,9 +38,19 @@ func show_stars():
         var fScale = currentStar.radius * scaleFactorMult + scaleFactorAdd
         var vScale = Vector3.ONE*fScale
         x.scale = vScale
+        starListNodes.append(x)
         $".".add_child(x)
-       
-        
 
 func _on_button_pressed() -> void:
     get_tree().quit()
+    
+    
+func show_south():
+    for star in starListNodes:
+        star.visible=(star.position.y <0)
+func show_north():
+    for star in starListNodes:
+        star.visible=(star.position.y >0)
+func show_all():
+    for star in starListNodes:
+        star.visible=true

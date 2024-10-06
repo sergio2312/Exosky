@@ -1,8 +1,20 @@
-[gd_scene load_steps=7 format=3 uid="uid://eadhxj3on3qx"]
+[gd_scene load_steps=9 format=3 uid="uid://eadhxj3on3qx"]
 
 [ext_resource type="Script" path="res://Scripts/StarManager.gd" id="1_16vrx"]
 [ext_resource type="PackedScene" uid="uid://dhimjc63cdqo1" path="res://Scenes/constellation_manager.tscn" id="2_pnk3m"]
 [ext_resource type="PackedScene" uid="uid://bdudl3vickyag" path="res://Nodes/player.tscn" id="2_sbabl"]
+
+[sub_resource type="Image" id="Image_eb6x4"]
+data = {
+"data": PackedByteArray(0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 38, 255, 255, 255, 139, 255, 255, 255, 207, 255, 255, 255, 241, 255, 255, 255, 241, 255, 255, 255, 211, 255, 255, 255, 145, 255, 255, 255, 42, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 4, 255, 255, 255, 137, 255, 255, 255, 251, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 253, 255, 255, 255, 149, 255, 255, 255, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 4, 255, 255, 255, 175, 255, 255, 255, 255, 255, 255, 255, 247, 255, 255, 255, 139, 255, 255, 255, 48, 255, 255, 255, 4, 255, 255, 255, 6, 255, 255, 255, 40, 255, 255, 255, 131, 255, 255, 255, 243, 255, 255, 255, 255, 255, 255, 255, 187, 255, 255, 255, 8, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 135, 255, 255, 255, 255, 255, 255, 255, 227, 255, 255, 255, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 36, 255, 255, 255, 219, 255, 255, 255, 255, 255, 255, 255, 153, 0, 0, 0, 0, 255, 255, 255, 36, 255, 255, 255, 251, 255, 255, 255, 247, 255, 255, 255, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 34, 255, 255, 255, 241, 255, 255, 255, 253, 255, 255, 255, 46, 255, 255, 255, 135, 255, 255, 255, 255, 255, 255, 255, 141, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 126, 255, 255, 255, 255, 255, 255, 255, 151, 255, 255, 255, 199, 255, 255, 255, 255, 255, 255, 255, 52, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 34, 255, 255, 255, 255, 255, 255, 255, 217, 255, 255, 255, 233, 255, 255, 255, 255, 255, 255, 255, 12, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 0, 255, 255, 255, 251, 255, 255, 255, 245, 255, 255, 255, 233, 255, 255, 255, 255, 255, 255, 255, 10, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 0, 255, 255, 255, 251, 255, 255, 255, 245, 255, 255, 255, 201, 255, 255, 255, 255, 255, 255, 255, 50, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 34, 255, 255, 255, 255, 255, 255, 255, 217, 255, 255, 255, 135, 255, 255, 255, 255, 255, 255, 255, 143, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 124, 255, 255, 255, 255, 255, 255, 255, 151, 255, 255, 255, 34, 255, 255, 255, 251, 255, 255, 255, 247, 255, 255, 255, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 34, 255, 255, 255, 241, 255, 255, 255, 253, 255, 255, 255, 48, 0, 0, 0, 0, 255, 255, 255, 137, 255, 255, 255, 255, 255, 255, 255, 227, 255, 255, 255, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 34, 255, 255, 255, 219, 255, 255, 255, 255, 255, 255, 255, 153, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 4, 255, 255, 255, 175, 255, 255, 255, 255, 255, 255, 255, 247, 255, 255, 255, 137, 255, 255, 255, 44, 255, 255, 255, 4, 255, 255, 255, 4, 255, 255, 255, 40, 255, 255, 255, 129, 255, 255, 255, 243, 255, 255, 255, 255, 255, 255, 255, 189, 255, 255, 255, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 4, 255, 255, 255, 139, 255, 255, 255, 251, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 253, 255, 255, 255, 253, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 255, 253, 255, 255, 255, 151, 255, 255, 255, 8, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 255, 255, 255, 38, 255, 255, 255, 141, 255, 255, 255, 207, 255, 255, 255, 241, 255, 255, 255, 243, 255, 255, 255, 211, 255, 255, 255, 145, 255, 255, 255, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0),
+"format": "RGBA8",
+"height": 16,
+"mipmaps": false,
+"width": 16
+}
+
+[sub_resource type="ImageTexture" id="ImageTexture_nh3u2"]
+image = SubResource("Image_eb6x4")
 
 [sub_resource type="Environment" id="Environment_jcm8k"]
 background_mode = 3
@@ -18,15 +30,110 @@ glow_hdr_threshold = 0.0
 [node name="Game" type="Node3D"]
 
 [node name="StarManager" type="Node" parent="."]
+unique_name_in_owner = true
 script = ExtResource("1_16vrx")
-scaleFactorMult = 3.0
-scaleFactorAdd = 0.035
+scaleFactorMult = 0.33
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
 
 [node name="Player" parent="." instance=ExtResource("2_sbabl")]
 
 [node name="ConstellationManager" parent="Player" instance=ExtResource("2_pnk3m")]
+
+[node name="TopView" type="Camera3D" parent="Player"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, -1, 0, 1, -4.37114e-08, 0, -1.7606, 0)
+projection = 1
+size = 250.0
+
+[node name="DownView" type="Camera3D" parent="Player"]
+unique_name_in_owner = true
+transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 4.94283, 0)
+projection = 1
+size = 250.0
+
+[node name="North" type="Control" parent="Player"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Player/North"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = -57.0
+offset_right = -1005.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/normal_font_size = 26
+text = "North"
+
+[node name="South" type="Control" parent="Player"]
+unique_name_in_owner = true
+visible = false
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Player/South"]
+layout_mode = 1
+anchors_preset = 12
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 32.0
+offset_top = -57.0
+offset_right = -1005.0
+offset_bottom = -15.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_font_sizes/normal_font_size = 26
+text = "South
+"
+
+[node name="3D" type="Control" parent="Player"]
+unique_name_in_owner = true
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 3
+size_flags_vertical = 3
+
+[node name="Cursor" type="TextureRect" parent="Player/3D"]
+unique_name_in_owner = true
+modulate = Color(1, 1, 0, 1)
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -8.0
+offset_top = -8.0
+offset_right = 8.0
+offset_bottom = 8.0
+grow_horizontal = 2
+grow_vertical = 2
+texture = SubResource("ImageTexture_nh3u2")
 
 [node name="WorldEnvironment" type="WorldEnvironment" parent="."]
 environment = SubResource("Environment_jcm8k")
